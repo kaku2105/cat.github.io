@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+    <title>form</title>
+    <meta charset="utf-8">
+    <style>
+        *{
+            margin: 0;
+            
+        }
+        header{
+            background-color: black;
+            
+        }
+        header img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 105px;
+        }
+        .wrapper {
+    background-color: ivory    ;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+    margin: auto;        
+  }
+  .form-row {
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+  }
+  .form-row > label {
+    padding: 1em 1em 1em 1em;
+    flex: 1;
+      font-family: cursive;
+      font-weight: bold;
+      font-size: 18px;
+      
+  }
+  .form-row > input {
+    flex: 2;
+    border-color: lightgray;
+      font-family: cursive;
+      font-size: 18px;
+      
+  }
+       
+  .form-row > input,
+  .form-row > button {
+    padding: .5em;
+  }
+  .form-row > button {
+   background: red;
+      padding: 15px;
+      
+   color: white;
+   border: 0;
+  }
+        .form-row > button:hover{
+            cursor: pointer;
+        }
+        .form-row > textarea{
+          flex: 2;  
+            border-color: lightgray;
+            font-family: cursive;
+            font-size: 18px;
+        }
+        .form-row > ul{
+            list-style: none; 
+            flex: 2; 
+            color: lightslategrey;
+            font-family: cursive;
+            font-size: 17px;
+        }
+        
+    </style>
+    </head>
+    <body>
+    <header><img src="assets/images/returns-removebg-preview.png" alt="cat"></header>
+    <form>
+  <ul class="wrapper">
+    <li class="form-row">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Name">
+    </li>
+    
+    <li class="form-row">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="E-mail">
+    </li>
+    <li class="form-row">
+      <label for="number">What is Your Mobile Number?</label>
+        <input type="number" id="number" placeholder="Phone Number">
+      </li>  
+       <li class="form-row">
+      <label for="website">Your Company Website (if any)</label>
+      <input type="url" id="website" placeholder="Url">
+    </li>
+      <li class="form-row">
+      <label for="product">Tell us About Your Product or Service ?</label>
+      <input type="text" id="product" placeholder="Product or Service" required >
+    </li>
+      <li class="form-row">
+      <label for="customer">Who is Your Ideal Customer?</label>
+          <textarea rows="11" cols=""  placeholder="A short description who should buy product and why?"></textarea>
+    </li>
+      <li class="form-row">
+      <label for="spend">How much would you spend to acquire your ideal customer?</label>
+      <input type="text" id="spend" placeholder="A short description who should buy product and why?" required >
+    </li>
+      <div class="form-row"> 
+          <label>How would you define your market?</label><br> <br>
+          <ul>
+          <li><input  type="radio" name="choice" >Niche<br> (e.g. You sell a CRM for Lawyers)</li>
+          <li><input  type="radio" name="choice" >Regional <br>(e.g. Chain of coffee shops in California)</li>
+          <li><input  type="radio" name="choice" >National<br> (e.g. You provide Financing for SMEs in the UK)</li>
+            <li><input  type="radio" name="choice" >Global <br>(e.g. Management consultancy firm servicing Asia)</li>
+              </ul>
+      </div><br>
+      <li class="form-row">
+      <label>How competitively are you priced?</label>
+        <ul>
+          <li><input  type="radio" name="priced" > Free product/service</li><br>
+          <li><input  type="radio" name="priced" >Affordable, below market price</li><br>
+          <li><input  type="radio" name="priced" >Current market price or slightly above</li><br>
+            <li><input  type="radio" name="priced" >Premium, notably above market price</li><br>
+              </ul>  
+      
+      </li>
+      
+      <li class="form-row">
+      <label>Why are your products/services better than your competitors?</label>
+      <textarea cols="" rows="11"></textarea>
+      </li>
+      <li class="form-row">
+      <label>Which of these best describes your current state?</label>
+          <ul>
+          <li><input  type="radio" name="state" >It's an idea, we haven't launched yet </li><br>
+          <li><input  type="radio" name="state" >We're in the prototype stage, ready for launch</li><br>
+          <li><input  type="radio" name="state" >Just launched, little to no customers  <li><br>
+            <li><input  type="radio" name="state" >Growing, we have paying customers</li><br>
+            <li><input  type="radio" name="state" >Scaling, we can't cope with demand</li><br>  
+              </ul> 
+      </li><br>
+       <li class="form-row">
+      <label>How willing and able are you to invest in the growth of your business right now?</label>
+          <ul>
+          <li><input  type="radio" name="invest" >I have the financial resources to invest in the growth of my business </li><br>
+          <li><input  type="radio" name="invest" >I can get the financial resources to invest in the growth of my business</li><br>
+          <li><input  type="radio" name="invest" > I do not have the financial resources to invest in the growth of my business<li><br>
+             
+              </ul> 
+      </li>
+      <li class="form-row">
+          <label>If we can help you get the result you need, how soon can you get started?</label>
+          <input type="text" id="time">
+      </li>
+    <li class="form-row">
+      <button type="submit">Submit</button>
+    </li>
+  </ul>
+</form>
+    
+    </body>
+</html>

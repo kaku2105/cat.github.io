@@ -1,0 +1,7 @@
+export const ViewerManagerApiImplementor = Symbol('ViewerManagerApiImplementor')
+export const ViewerManagerApi = Symbol('ViewerManagerApi')
+export const LoadPagesSym = Symbol('LoadPages')
+export const LoadPagesCbsSymbol = Symbol('LoadPagesCbs')
+export const ViewerSourceSymbol = Symbol('ViewerSource')
+export const ViewerBaseSymbol = Symbol('ViewerBase')
+export const ManifestSymbol = Symbol('Manifest')

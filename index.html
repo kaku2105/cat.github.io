@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+<head>
+    <title>Example</title>
+    <meta charset ="utf-8">
+    <style>
+          * {
+          box-sizing: border-box; 
+            }
+          body {
+           margin: 0;
+                }
+             #main {
+                    display: flex;
+                    flex-direction: column;
+                    min-height: calc(100vh - 40vh);
+              }
+             
+           
+               #main   {
+                            order: -1;
+                            }
+            header, footer, article,  aside {
+                                                    padding: 1em;
+                                                }
+                header, footer {
+                            background: black;
+                            height: 70vh;
+                            color: white;
+             }
+        @media screen and (min-width:576px){
+             .wrapperone {
+                flex-direction: row;
+            }
+        }
+        h1{
+            font-size: 68px;
+            border: 2px white;
+            
+        }
+        
+        header{
+            text-align: center;
+        }
+        .logo{
+           background-color: black;
+        }
+        .logo img{
+             display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 105px;
+        }
+        header a{
+            background-color: #0D0E47;
+        border: none;
+        color: white;
+        padding: 1.3em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 15px;    
+        }
+        header span{
+                font-family: monospace;
+                padding: 5px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 200px;
+            
+            
+        }
+      
+        article{
+            background-color: #0D0E47;
+            height: 40vh;
+            color: aliceblue;
+            
+        }
+        .wrapper{
+           text-align: center;
+            font: 32px;
+            
+        }
+        
+        #main > .aboutus {
+                            flex: 0 0 50vw;
+                            background-image: url(assets/images/pacto-visual-cWOzOnSoh6Q-unsplash.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-blend-mode: darken;
+                            opacity: 0.9;
+               
+                            }
+        
+        }
+        
+        .wrapperone{
+            display: flex;
+            flex-direction: column;
+            color: aliceblue;
+            margin: auto;
+            background-color: aliceblue;
+        }
+        .bigbox{
+                display: flex;
+                margin-left: auto;
+                margin-left: auto;
+        }
+        .box{
+            background-color: black;
+            color: white;
+            padding: 30px;
+            opacity: 0.8;
+            border-radius: 20px;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+        
+        
+           margin-top: 50px;
+            margin-bottom: 30px;
+            
+        }
+        .box:hover{
+            opacity: 1;
+            background-color: solid black;
+            border-style: solid;
+            border-color: white;
+            
+        }
+        .box.one{
+            width: 50%;
+            margin: 30px;
+        }
+        .box.two{
+            width: 50%;
+            margin: 30px;
+        }
+        #main > .pakages{
+                    flex: 0 0 30vw;
+                    background-color: #0D0E47;
+        }
+        .pakages p{
+            text-align: center;
+            font-family: cursive;
+            color: black;
+            padding: 10px;
+            margin: auto;
+            width: 50%;
+            background-color: aliceblue;
+        }
+        h1.demo-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+
+h1.demo-title a {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing-table {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin-left:  auto;
+    margin-right: auto;
+  background: ;
+}
+
+.pricing-table .ptable-item {
+  width: 50%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .pricing-table .ptable-item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-table .ptable-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-table .ptable-item {
+    width: 100%;
+  }
+}
+
+.pricing-table .ptable-single {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+}
+
+.pricing-table .ptable-header,
+.pricing-table .ptable-body,
+.pricing-table .ptable-footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pricing-table .ptable-status ,
+.pricing-table .ptable-title,
+.pricing-table .ptable-price,
+.pricing-table .ptable-description,
+.pricing-table .ptable-action {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-table .ptable-single {
+  background: #f6f8fa;
+}
+
+.pricing-table .ptable-single:hover {
+  box-shadow: 0 0 10px #999999;
+}
+
+.pricing-table .ptable-header {
+  margin: 0 30px;
+  padding: 30px 0 45px 0;
+  width: auto;
+  background: #2A293E;
+}
+
+.pricing-table .ptable-header::before,
+.pricing-table .ptable-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #f6f8fa;
+}
+
+.pricing-table .ptable-header::before {
+  right: 50%;
+  border-right: 250px solid transparent;
+}
+
+.pricing-table .ptable-header::after {
+  left: 50%;
+  border-left: 250px solid transparent;
+}
+
+.pricing-table .ptable-item.featured-item .ptable-header {
+  background: #FF6F61;
+}
+
+.pricing-table .ptable-status {
+  margin-top: -30px;
+}
+
+.pricing-table .ptable-status span {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  padding: 5px 0;
+  text-align: center;
+  color: #FF6F61;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background: #2A293E;
+}
+
+.pricing-table .ptable-status span::before,
+.pricing-table .ptable-status span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #FF6F61;
+}
+
+.pricing-table .ptable-status span::before {
+  right: 50%;
+  border-right: 25px solid transparent;
+}
+
+.pricing-table .ptable-status span::after {
+  left: 50%;
+  border-left: 25px solid transparent;
+}
+
+.pricing-table .ptable-title h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.pricing-table .ptable-price h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.pricing-table .ptable-price h2 small {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-left: -15px;
+}
+
+.pricing-table .ptable-price h2 span {
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing-table .ptable-body {
+  padding: 20px 0;
+}
+
+.pricing-table .ptable-description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-table .ptable-description ul li {
+  color: #2A293E;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 7px;
+  border-bottom: 1px solid #dedede;
+}
+
+.pricing-table .ptable-description ul li:last-child {
+  border: none;
+}
+
+.pricing-table .ptable-footer {
+  padding-bottom: 30px;
+}
+
+.pricing-table .ptable-action a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #FF6F61;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #2A293E;
+}
+
+.pricing-table .ptable-action a:hover {
+  color: #2A293E;
+  background: #FF6F61;
+}
+
+.pricing-table .ptable-item.featured-item .ptable-action a {
+  color: #2A293E;
+  background: #FF6F61;
+}
+
+.pricing-table .ptable-item.featured-item .ptable-action a:hover {
+  color: #FF6F61;
+  background: #2A293E;
+}
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="logo"><img src="assets/images/returns-removebg-preview.png" alt="cat"></div>
+         <header>
+             <h1>C.A.T<br> ADVERTISING AGENCY</h1>
+            <span style="background-color: aliceblue; color: black; font-weight: 900;">Hi,&nbsp;We are Here to Help you out.</span><br><br>
+            <span style="font-size: 27px; font-family: poppins-semibold,poppins,sans-serif">"We Help Brands to achive Profitable Growth  Strorm Markets, Within One Year Or Less, Guaranteed."</span><br><br><br><br>
+             <a href="form.html" class="button">Join Us</a>
+            <!--<button onclick="href= form.html">Apply For the Demo Class</button>-->
+        </header>
+  <div id="main">
+   
+  
+      <div class="pakages">
+          
+          
+          
+          <h1 class="demo-title">
+  Our Unique Digital Marketing Pakages<br>              
+</h1>
+<p>In this section, you'll find a pricing table that includes the digital marketing services that I feel are appropriate based on our previous discussion.</p><br>          
+<div class="pricing-table">
+  <div class="ptable-item">
+    <div class="ptable-single">
+      <div class="ptable-header">
+        <div class="ptable-title">
+          <h2>Content Planing<br> & Graphics designing</h2>
+        </div>
+        <div class="ptable-price">
+          <h2><small>&#8377;</small>10,000<span>/ M</span></h2>
+        </div>
+      </div>
+      <div class="ptable-body">
+        <div class="ptable-description">
+          <ul>
+            <li>------</li>
+            <li>-------</li>
+            <li>--------</li>
+            <li>---------</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ptable-footer">
+        <div class="ptable-action">
+          <a href="">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ptable-item featured-item">
+    <div class="ptable-single">
+      <div class="ptable-header">
+        <div class="ptable-title">
+          <h2>Digital Marketing Services</h2>
+        </div>
+        <div class="ptable-price">
+          <h2><small>&#8377;</small>20,000<span>/ M</span></h2>
+        </div>
+      </div>
+      <div class="ptable-body">
+        <div class="ptable-description">
+          <ul>
+            <li>Facebook & Instagram Ads</li>
+            <li>----</li>
+            <li>-----</li>
+            <li>-------</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ptable-footer">
+        <div class="ptable-action">
+          <a href="">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+          
+      </div>
+        <div class="aboutus">
+        <h2 style="color: aliceblue; text-align: center; text-decoration: underline; font-family: serif;">Our Services</h2>
+            <div class="wrapperone">
+                <div class="bigbox">
+                <div class="box one "><h3>Our Services</h3>
+                    <p>C.A.T Advertising Agency is an end-to-end provider of digital marketing services. Whether you're looking for a turnkey managed strategy, an independent audit, or services specific to a short-term campaign, our experience and approach will prove to be a valuable asset.</p>
+                    </div>
+                    <div class="box two"><h3>Our in-house services include</h3>
+                    <div><ul><li>Social Media Marketing ( Facebook Ads, Instagram Ads )	Specialization</li>
+<li>Proper Market Research ( Competitor Research )	Specialization</li></ul></div>
+
+
+                    </div>
+                    </div>
+                <div class="bigbox">
+                    <div class="box one"><h3>Social Media Marketing</h3>
+                        <p> Social Media has changed how brands communicate with their audiences forever. Whether your business is a B2B or B2C brand, social media
+is a powerful way to build brand awareness, build a positive image, and drive lead generation  sales. We specialize in strategic social media campaigns that focus on building and protecting a positive brand image, creating loyalty among fans, and driving new leads  sales for your business.</p>
+                    </div>
+                    <div class="box two"><h3>Digital Experiences</h3>
+                    <p>The game changer - lower cost  increase the creativity in your marketing systems to acquire retain customers more cost-effectively.</p>
+                    </div>
+                </div>
+        </div>  
+      </div>
+       <article>
+      <div class="wrapper">
+        Stay connected with us ....
+        </div>
+      </article>
+    
+  </div>
+  <footer>Footer</footer>
+    </div>         
+    </body>
+</html>

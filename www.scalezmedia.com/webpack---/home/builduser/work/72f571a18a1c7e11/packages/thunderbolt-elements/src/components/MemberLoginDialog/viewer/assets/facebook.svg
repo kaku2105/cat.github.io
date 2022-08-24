@@ -1,0 +1,27 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var _ref = /*#__PURE__*/React.createElement("rect", {
+  width: 266.89,
+  height: 266.89,
+  rx: 14.73,
+  ry: 14.73,
+  fill: "#4267b2"
+});
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  d: "M184.15 266.89V163.54h34.69l5.16-40.28h-39.85V97.54c0-11.66 3.24-19.61 20-19.61h21.33v-36a285.42 285.42 0 00-31.08-1.59c-30.75 0-51.81 18.77-51.81 53.24v29.71h-34.82v40.28h34.78v103.32z",
+  fill: "#fff"
+});
+
+function SvgFacebook(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    className: "facebook_svg__login-svg",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 266.89 266.89"
+  }, props), _ref, _ref2);
+}
+
+export default "data:image/svg+xml,%3Csvg class='login-svg' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 266.89 266.89'%3E %3Cg%3E %3Crect style='fill:%234267b2;' width='266.89' height='266.89' rx='14.73' ry='14.73' /%3E %3Cpath style='fill:%23fff;' d='M184.15,266.89V163.54h34.69L224,123.26H184.15V97.54c0-11.66,3.24-19.61,20-19.61h21.33v-36a285.42,285.42,0,0,0-31.08-1.59c-30.75,0-51.81,18.77-51.81,53.24v29.71H107.77v40.28h34.78V266.89Z' /%3E %3C/g%3E %3C/svg%3E";
+export { SvgFacebook as ReactComponent };

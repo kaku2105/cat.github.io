@@ -1,0 +1,13 @@
+var rt=require("@stylable/runtime/cjs/css-runtime-stylesheet.js");
+module.exports=rt.create( "Captcha3940957316", {
+    "classes": {
+        "root": "Captcha3940957316__root", "captchaLoader":"Captcha3940957316__captchaLoader", "captcha":"Captcha3940957316__captcha", "checkbox":"Captcha3940957316__checkbox"
+    }
+    , "vars": {}
+    , "stVars": {}
+    , "keyframes": {
+        "spinner-spin": "Captcha3940957316__spinner-spin", "fadeOut":"Captcha3940957316__fadeOut"
+    }
+}
+
+, "", -1, module.id);
